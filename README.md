@@ -9,3 +9,4 @@ My portofolio made during Coder's Lab bootcamp. Cointans for instance quotation 
   * jQuery
 * GULP
 * RWD
+  * Grid Layout

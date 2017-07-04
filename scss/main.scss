@@ -1,6 +1,18 @@
 @import "variables";
 @import "reset";
+@import "grid";
 
 body {
   background: $main-color;
+}
+
+header {
+  h1{
+    text-align: center;
+    color: #fff;
+    font-size: 50px;
+    margin-top: 80px;
+    padding: 50px;
+    border: 1px solid #fff;
+  }
 }

@@ -1,0 +1,40 @@
+$grid-columns: 6;
+$grid-column-width: 100% / $grid-columns;
+$grid-container-width: 1200px;
+
+
+.container{
+  width: 100%;
+  max-width: $grid-container-width;
+  margin: 0 auto;
+
+  .row{
+    &::before,
+    &::after{
+      content: "";
+      display: block;
+      height: 0;
+      clear: both;
+      visibility: hidden;
+    }
+ 
+    [class*='col-']{
+      float:none;
+      width:100%;
+      @media (min-width: 640px){
+        float:left;
+      }
+
+    }
+
+    @media (min-width: 640px){
+      @for $i from 1 through $grid-columns{
+        .col-#{$i}{
+          width: $grid-column-width * $i;
+        }
+      }
+    }
+
+  }
+
+}
