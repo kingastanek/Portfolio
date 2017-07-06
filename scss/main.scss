@@ -38,9 +38,9 @@ header{
 }
 
 section {
-  .paralax {
+  .parallax {
     max-width: 100%;
-    background-image: url("/img/paralax.png");
+    background-image: url("../img/paralax.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -50,9 +50,9 @@ section {
     height: 400px;
     };
   }
-  .paralax2 {
+  .parallax2 {
     max-width: 100%;
-    background-image: url("/img/paralax2.png");
+    background-image: url("../img/paralax2.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -62,9 +62,9 @@ section {
     height: 400px;
     };
   }
-  .paralax3 {
+  .parallax3 {
     max-width: 100%;
-    background-image: url("/img/paralaxa.png");
+    background-image: url("../img/paralaxa.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -164,7 +164,7 @@ article {
 .sprite {
   width: 200px !important;
   height: 312px;
-  background: url("/img/sprite.png");
+  background: url("../img/sprite.png");
   background-repeat: no-repeat;
   animation: go 1s steps(10) infinite;
   margin: 0 auto;
