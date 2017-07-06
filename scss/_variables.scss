@@ -1,2 +1,8 @@
 $main-color: #20222C;
-$second-color: #076BDF;
+$font-color: #fff;
+
+@mixin desktop {
+  @media (min-width: 640px){
+    @content;
+  }
+}
