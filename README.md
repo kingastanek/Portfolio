@@ -1,7 +1,7 @@
 # Portfolio
 My portofolio made during Coder's Lab bootcamp. Cointans for instance quotation generator and paralax.
 
-### I used:
+### I use:
 * HTML
 * CSS
   * SCSS
