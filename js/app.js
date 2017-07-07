@@ -24,9 +24,10 @@ var author = [
 ];
 fetchQuote(quotes, author);
 
-$('div.quotation button').on('click', function(q, a) {
+$('div.quotes button').on('click', function(q, a) {
   fetchQuote(quotes, author);
-})
+});
+
 
 function fetchQuote(q, a){
   var quoteNum = Math.floor(Math.random() * quotes.length);
