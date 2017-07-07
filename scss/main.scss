@@ -80,16 +80,16 @@ article.technology{
   div.col-1 {
     text-align: center;
     background: $main-color;
-    font-size: 40px;
+    font-size: 30px;
     color: $font-color;
     padding: 30px 0;
-    &:hover {
-      font-size: 50px;
-      border: 1px solid #fff;
-      padding: 20px;
-    }
     @include desktop {
       padding-bottom: 80px;
+      &:hover {
+        font-size: 40px;
+        border: 1px solid #fff;
+        padding: 20px;
+      }
     }
   }
 }
@@ -98,28 +98,31 @@ article {
   div.about {
     margin: 40px 0;
       p{
+      letter-spacing: 50px;
+      word-spacing: 10px;
       text-align: center;
       color: $font-color;
-      font-size: 30px;
+      font-size: 28px;
       border-top: 1px solid #fff;
       border-bottom: 1px solid #fff;
       padding: 20px;
       @include desktop{
-        font-size: 40px;
+        font-size: 50px;
         };
       }
     }
     div.description {
       p {
       text-align: center;
-      font-size: 30px;
+      font-size: 25px;
       color: $font-color;
       padding: 0px 40px;
       @include desktop{
         border-left: 1px solid #fff;
         border-right: 1px solid #fff;
-        margin: 30px 0;
-        font-size: 40px;
+        margin-top: 30px;
+        margin-bottom: 50px;
+        font-size: 35px;
       };
     }
   }
@@ -127,9 +130,9 @@ article {
 
 
 article {
-    div.quotation {
+    div.quotes {
       text-align: center;
-      font-size: 6vw;
+      font-size: 4vw;
       color: $font-color;
       @include desktop {
         font-size: 40px;
@@ -138,7 +141,7 @@ article {
       h1{
         margin: 10px 0;
         color: $font-color;
-        font-size: 6vw;
+        font-size: 5vw;
         text-align: center;
         @include desktop{
           font-size: 40px;
@@ -161,91 +164,25 @@ article {
     }
   }
 
-.sprite {
-  width: 200px !important;
-  height: 312px;
-  background: url("../img/sprite.png");
-  background-repeat: no-repeat;
-  animation: go 1s steps(10) infinite;
-  margin: 0 auto;
-  @include desktop{
-    animation: go2 700ms steps(10) infinite, move 15s steps(10) infinite;
-  }
- }
 
 footer {
   height: 180px;
-  .fa {
+  div.col-2{
+    text-align: center;
     margin-top: 20px;
-    margin-left: 50vw;
-    font-size: 60px;
+  }
+  .fa {
+    font-size: 50px;
     color: $font-color;
     text-decoration: none;
     @include desktop{
-      margin-left: 120px;
-      margin-top: 50px;
       font-size: 80px;
+      margin-top: 30px;
     };
   }
-  p {
-    color: $font-color;
-    font-size: 30px;
-    text-align: center;
-    @include desktop{
-    margin-right: 50px;
-    }
-  }
-}
-
-.hidden {
-  display: none;
 }
 
 //KEYFRAMES
-@keyframes go {
-  0% {
-    padding-bottom: 20px;
-    transform: rotateY(180deg);
-    background-position: 0 0;
-  }
-  100% {
-    padding-bottom: 20px;
-    transform: rotateY(180deg);
-    background-position: -2000px 0;
-  }
-}
-
-@keyframes go2 {
-  0% {
-    background-position: 0 0;
-  }
-  100% {
-    background-position: -2000px 0;
-  }
-}
-
-@keyframes move {
-  0% {
-    transform: rotateY(180deg);
-    margin-left: -30vw;
-  }
-  20%{
-    margin-left: 0vw;
-  }
-  40%{
-    margin-left: 30vw;
-  }
-  60%{
-    margin-left: 60vw;
-  }
-  80% {
-    margin-left: 90vw;
-  }
-  100% {
-    transform: rotateY(180deg);
-    margin-left: 100vw;
-  }
-}
 
 @keyframes livewriting {
   from {
